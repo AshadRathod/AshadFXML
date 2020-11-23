@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="409.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="163.0" layoutY="157.0" onAction="#handleButtonAction" text="Click Me!" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button fx:id="buttonCreateUser" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#createUser" text="Create User" />
+      <Button fx:id="buttonReadUserAcct" layoutX="94.0" layoutY="89.0" mnemonicParsing="false" onAction="#readUserAcct" text="Read User By Account Number and ID " />
+      <Button fx:id="buttonUpdateUser" layoutX="12.0" layoutY="157.0" mnemonicParsing="false" onAction="#updateUser" text="Update User" />
+      <Button fx:id="buttonDeleteUser" layoutX="315.0" layoutY="157.0" mnemonicParsing="false" onAction="#deleteUser" text="Delete User" />
+      <Button fx:id="buttonReadUser" layoutX="297.0" layoutY="13.0" mnemonicParsing="false" onAction="#readUser" text="Read All Users" />
+      <Button fx:id="buttonReadUserEmail" layoutX="12.0" layoutY="51.0" mnemonicParsing="false" onAction="#readUserEmail" text="Read User By Email " />
+      <Button fx:id="buttonReadUserName" layoutX="274.0" layoutY="51.0" mnemonicParsing="false" onAction="#readByName" text="Read User By Name" />
+      <TableView layoutX="-1.0" layoutY="288.0" prefHeight="251.0" prefWidth="409.0">
+        <columns>
+          <TableColumn prefWidth="94.6667150259018" text="ID" />
+          <TableColumn prefWidth="104.66663360595703" text="Name" />
+            <TableColumn prefWidth="98.66667175292969" text="Account Number" />
+            <TableColumn prefWidth="108.00003051757812" text="Email" />
+        </columns>
+      </TableView>
+      <Text layoutX="16.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Users" wrappingWidth="112.00002797444665">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="buttonSearch" layoutX="308.0" layoutY="217.0" mnemonicParsing="false" onAction="#searchByNameAction" text="Search" />
+      <Separator layoutY="202.0" prefHeight="4.0" prefWidth="408.0" />
+      <TextField layoutX="127.0" layoutY="244.0" prefHeight="4.0" prefWidth="135.0" />
+      <Text layoutX="33.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="buttonReadUserID" layoutX="153.0" layoutY="25.0" mnemonicParsing="false" onAction="#readById" text="Read User By ID" />
+      <Button fx:id="buttonAdvanceSearch" layoutX="289.0" layoutY="256.0" mnemonicParsing="false" onAction="#searchByNameAdvancedAction" text="Advanced Search" />
+      <Button fx:id="showDetailsInPlace" layoutX="163.0" layoutY="551.0" mnemonicParsing="false" onAction="#actionShowDetailsInPlace" text="Show Details In-Place " />
+      <Button fx:id="showDetails" layoutX="308.0" layoutY="551.0" mnemonicParsing="false" onAction="#actionShowDetails" text="Show Details" />
+    </children>
+</AnchorPane>
